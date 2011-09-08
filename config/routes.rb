@@ -1,4 +1,10 @@
 Scoutmastery::Application.routes.draw do
+  resources :units
+
+  get "welcome/index"
+
+  get "welcome/about"
+
   devise_for :admins
 
   devise_for :users
